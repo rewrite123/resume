@@ -208,7 +208,7 @@ tabs .tab a:hover, .tabs .tab a.active {
   background-color: rgba(0,0,0,0);
 }
 .flip-icon{
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
