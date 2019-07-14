@@ -225,10 +225,11 @@ tabs .tab a:hover, .tabs .tab a.active {
 }
 
 @media only screen and (max-width: 600px){
-
+  .overlay-container h4{
+    font-size: 26px;
+  }
   .fix-skill-icon-mobile{
-    margin-right: 50% !important;
-    font-size: 2px !important;
+    margin-right: 50% !important;font-size: 2px !important;
   }
   .carousel-container-lg{
     padding-bottom: 5px;
