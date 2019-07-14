@@ -224,15 +224,19 @@ tabs .tab a:hover, .tabs .tab a.active {
   transform: rotate(0deg);
 }
 
-
-@media only screen and (max-width: 600px){
-  .overlay-container .deresolate{
-    height: 125px !important;
+@media only screen and (max-width: 992px){
+  .more-on-mobile{
+    height: 75px !important;
+    overflow: hidden;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
   }
   .more-on-mobile{
     height: 75px !important;
     overflow: hidden;
     border-bottom: 3px solid rgba(255,255,255,0.5);
+  }
+  .overlay-container .deresolate{
+    height: 125px !important;
   }
   .overlay-container h4{
     font-size: 26px;
