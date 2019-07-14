@@ -226,6 +226,9 @@ tabs .tab a:hover, .tabs .tab a.active {
 
 
 @media only screen and (max-width: 600px){
+  .overlay-container img{
+    height: 125px;
+  }
   .more-on-mobile{
     height: 75px !important;
     overflow: hidden;
