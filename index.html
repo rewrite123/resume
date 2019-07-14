@@ -103,7 +103,7 @@ I'm going to be the best web developer ever!
 
     <div class="row" style="min-height: 100vh;">
       <div class="col s12 m5 white-text text-contrast">
-        <div class="parallax-container" style="height: 100vh;">
+        <div class="parallax-container hide-on-small-only" style="height: 100vh;">
           <div class="parallax">
             <img id="myFace2" src="media/img/me-1.jpg" class="deresolate" style="" />
           </div>
@@ -115,15 +115,31 @@ I'm going to be the best web developer ever!
             <h3>I'm a web developer</h3>
           </div>
         </div>
+        <div class="hide-on-med-and-up">
+          <div class="card" style="background-color: inherit;">
+            <div class="card-content white-text">
+              <img src="media/img/me-1-mobile.jpg" alt="" style="width: 100%;" />
+              <h1 style="margin: 0px;">Hi</h1>
+              <span class="card-title">I'm Isaac</span>
+              <h5>I'm a web developer</h5>
+              <h5>&emsp;&emsp;-probably</h5>
+            </div>
+            <div class="card-action">
+              <a href="#skills">Skills</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col s12 m7" style="padding-left: 0px;">
-        <nav>
+        <nav class="hide-on-med-and-down">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
+            <a href="#!" class="brand-logo">Isaac Hormel</a>
+            <ul id="nav-mobile" class="right">
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -132,10 +148,15 @@ I'm going to be the best web developer ever!
           <div class="row image-backdrop-repeating" style="background-image: url(media/img/back-2.png); width: 100%; margin: auto;">
 
             <h2 class="white-text" style="margin-top: 0px; line-height: 25px !important;"><img src="media/img/bullet-1.png" class="deresolate" style="width: 75px;">About me</h2>
-            <div class="white-text article-content-border-left">
-              <h4>I'm a full stack developer operating out of Texas. I work on all kinds of sites from all walks of life. From blogs to social media platforms, my skillset allows me to work anywhere.</h4>
-              <h4>My favorite type of work is back-end. I love writing servers in either express or with node's http module that allow for easy development. I usualy get sucked into making tools and automating systems so much that I can forget that I also have to do the front-end too.</h4>
-              <h4>That doesn't mean that I don't like front-end work, or that I can't make a stellar UI. Colors that mesh and components to match are a staple for all my sites. It's just that making the systems that allow websites to serve unusual content or making charts of data-flow is just something that I am especially fond of.</h4>
+            <div class="white-text article-content-border-left section scrollSpy"  id="aboutCont">
+              <h4>I'm a full stack developer operating out of Texas. I work on all kinds of sites from all walks of life. From blogs to social media platforms; my skillset allows me to work anywhere.</h4>
+              <div class="more-on-mobile" id="aboutToggleContent">
+                <h4>My favorite type of work is back-end. I love writing servers in either express or with node's http module that allow for easy development. I usualy get sucked into making tools and automating systems so much that I can forget that I also have to do the front-end too.</h4>
+                <h4>That doesn't mean that I don't like front-end work, or that I can't make a stellar UI. Colors that mesh and components to match are a staple for all my sites. It's just that making the systems that allow websites to serve unusual content or making charts of data-flow is just something that I am especially fond of.</h4>
+              </div>
+              <div class="center-align">
+                <a href="#aboutCont" style="color: white;"><i class="material-icons to-flip-icon hide-on-med-and-up medium" onclick="$(this).toggleClass('flip-icon'); $(this).toggleClass('to-flip-icon'); $('#aboutToggleContent').toggleClass('more-on-mobile');">keyboard_arrow_down</i></a>
+              </div>
             </div>
           </div>
           <img src="media/img/back-3.png" class="deresolate" style="width: 100%;">
@@ -143,7 +164,7 @@ I'm going to be the best web developer ever!
       </div>
     </div>
 
-    <div class="container">
+    <div class="container section scrollspy" id="skills">
       <div class="row">
         <div class="image-backdrop-repeating">
           <img src="media/img/back-4.png" class="deresolate" style="width: 100%;">
@@ -265,7 +286,7 @@ I'm going to be the best web developer ever!
 
 
     <!-- HERE IS THE PORTFOLIO PAGE -->
-    <div class="container">
+    <div class="container section scrollspy" id="portfolio">
       <div class="row">
         <div class="image-backdrop-repeating">
           <img src="media/img/back-7.png" class="deresolate" style="width: 100%;">
@@ -304,7 +325,7 @@ I'm going to be the best web developer ever!
                     <i class="material-icons right to-flip-icon" id="dropArrow2">keyboard_arrow_down</i>
                   </div>
                   <div class="collapsible-body">
-                    <h5>Also a smaple page, Nomen Tuum was made with Bootstrap and relies heavily on images as breaks. It was designed mainly as a product and business information page, with the ability to point users towards a more forward login page for additional utilities that would be present in a real website.</h5>
+                    <h5>Also a smaple page, Nomen Tuum was made with Bootstrap and relies heavily on images as breaks. It was designed mainly as a product and business information page, with the ability to point users towards a more developed login page for additional utilities that would be present in a real website.</h5>
                   </div>
                   <p style="margin-top: 15px; padding-left: 20px;">See it <a href="https://rewrite123.github.io/NomenTuum/" target="_blank">here</a>: <small>https://rewrite123.github.io/NomenTuum/</small></p>
                 </li>
@@ -357,7 +378,7 @@ I'm going to be the best web developer ever!
       </div>
     </div>
 
-    <div class="container">
+    <div class="container section scrollspy" id="contact">
       <div class="row">
         <div class="image-backdrop-repeating">
           <img src="media/img/back-10.png" class="deresolate" style="width: 100%;">
@@ -367,7 +388,7 @@ I'm going to be the best web developer ever!
             <div class="article-content white-text center-align">
               <h3>Check me out on <a href="https://www.linkedin.com/in/isaac-hormel-199180118?trk=people-guest_prnoreferrerofile-result-card_result-card_full-click" style="color: white !important; font-weight: bold;" target="_blank">LinkedIn</a> <i class="fab fa-linkedin"></i></h3>
               <h3>See my work on <a href="https://github.com/rewrite123" style="color: white !important; font-weight: bold;" target="_blank">Github</a> <i class="fab fa-github-square"></i></h3>
-              <h3>Send me an <a href="mailto:caasilemroh@gmail.com?subject=Hi%Isaac,%I%would%like%to%hire%you!" style="color: white !important; font-weight: bold;">Email</a> <i class="fas fa-envelope-square"></i></h3>
+              <h3>Send me an <a href="mailto:caasilemroh@gmail.com?subject=Hi+Isaac,+I+would+like+to+hire+you!" style="color: white !important; font-weight: bold;">Email</a> <i class="fas fa-envelope-square"></i></h3>
               <h5>caasilemroh@gmail.com</h5>
             </div>
 
@@ -383,7 +404,7 @@ I'm going to be the best web developer ever!
     M.AutoInit();
     $(document).ready(function() {
       $("textarea").characterCounter();
-
+      $(".scrollspy").scrollSpy();
     });
   </script>
 </body>

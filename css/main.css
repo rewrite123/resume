@@ -223,6 +223,11 @@ tabs .tab a:hover, .tabs .tab a.active {
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
+.more-on-mobile{
+  height: 75px !important;
+  overflow: hidden;
+  border-bottom: 3px solid rgba(255,255,255,0.5);
+}
 
 @media only screen and (max-width: 600px){
   .overlay-container h4{
